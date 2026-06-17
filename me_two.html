@@ -1,0 +1,159 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+    <title> Rob's Webpage </title>
+    <style type = 'text/css'>
+        body,html{font-size: 18px; font-family: "Bungee", sans-serif; font-weight: 400; font-style: normal}
+        
+        h1, h2 {color: #1607c5; margin-bottom: 30px;}
+        
+        ul {border-style: solid; border-width: 2px; border-color: #0b0b0c; list-style-position: inside;}
+        div.container {text-align: center;}
+        ul.myUL {display: inline-block; text-align: left;}
+
+        #one {background-image: url(chicken.jpg);  background-size:cover;  
+			height: 100%;  width: 100%; padding-top: 5px; box-sizing:border-box; 
+			text-align:center; font-size:  40px; z-index:0; border-style: solid; border-width: 2px; border-color: #0b0b0c;}
+        #content {display:inline-block; position:relative; top: 200; right: 500; width: 40%;}
+        .right-col{width: 20%; display:inline-block; position:relative; color: #fff; font-size: 20px;}
+
+        tr:nth-child(even){background-color: rgb(187, 127, 255);}
+
+    
+        .form-group {display: grid; grid-template-columns: 150px 1fr; gap: 15px; align-items: left; margin-bottom: 15px;}
+        .form-group label {text-align: right;font-weight: bold;}
+        .form-group input, select {width:500px}
+
+        .icon-container {position: fixed; top: 100x; right: 35px; display: flex; gap: 5px; align-items: center}
+    </style>
+</head>
+
+<body>
+<h1> Rob Gaibler </h1>
+
+<div class="icon-container">
+<img class="icon" src = "fb.png" style="height: 25px;"/>
+<img class="icon" src = "twitter.png" style="height: 25px;"/>
+</div>
+
+<h2> Trip Info </h2>
+<p> Every year, a group of my friends travel to Lake Winnipesaukee in New Hampshire.
+    We hike in the White Mountains, go into the small, quaint towns to vitage shop, and rent a pontoon boat for a day. 
+    It is my favorit weekend each year! This year, we have a bigger group of friends going, and I cannot wait to show them all the magic of the lake! </p>
+
+
+<h2> List </h2>
+<div class = 'container'>
+<ul class = 'myUL'>
+    <li>  A dog named Clifford </li>
+    <li>  A cat named Cleopatra </li>
+    <li>  A kangaroo named Bounce </li>
+</ul>
+</div>
+
+<h2> Favorite Restaurant and Food </h2>
+<p> 
+    My favorite restaurant is 
+    <a href = 'https://www.areafour.com/' target="_blank"> Area Four</a>.
+    I get an espresso over ice (splash of milk) every morning and sometimes splurge on a chocolate croissant. 
+    Their sour dough crost pizza is to die for - I defintiely recommend the mushroom pizza. 
+</p>
+
+<p>
+    <div id='one'>
+        <div id='content'>
+        <img src = "wings.jpg" style="height: 200px;"/>
+		<div class='right-col'>
+			<p> My favorite food is buffalo wings with blue cheese (not ranch)! </p>
+		</div><!-- end col2-->
+	</div> <!-- end content-->
+    </div>
+    
+
+</p>
+<br/>
+<h2> Books! </h2>
+<p>
+<table style='border-collapse:collapse; width: 100%; text-align: left;'>
+  <tr>
+    <th style='padding: 8px;'>Title</th>
+    <th style='padding: 8px;'>Cover</th>
+    <th style='padding: 8px;'>Author</th>
+    <th style='padding: 8px;'>Summary</th>
+  </tr>
+  <tr>
+    <td style='padding: 8px;'>The Last Lecture</td>
+    <td style='padding: 8px;'><img src='the_last_lecture.jpg' alt='The Last Lecture Book Cover' width='50'></td>
+    <td style='padding: 8px;'>Randy Pausch</td>
+    <td style='padding: 8px;'>A memoir written by a dying computer science professor, offering humorous and intelligent insights on seizing every moment and achieving your childhood dreams.</td>
+  </tr>
+  <tr>
+    <td style='padding: 8px;'>The Midnight Library</td>
+    <td style='padding: 8px;'><img src='midnight_library.jpg' alt='The Midnight Library Book Cover' width='50'></td>
+    <td style='padding: 8px;'>Matt Haig</td>
+    <td style='padding: 8px;'>A novel about a magical library between life and death where a woman gets the chance to undo her regrets and try out all the alternative lives she could have lived.</td>
+  </tr>
+  <tr>
+    <td style='padding: 8px;'>Giovanni's Room</td>
+    <td style='padding: 8px;'><img src='giovannis_room.jpg' alt='Giovanni Room Book Cover' width='50'></td>
+    <td style='padding: 8px;'>James Baldwin</td>
+    <td style='padding: 8px;'>A queer classic centered on an American man in Paris who struggles with conventional morality while caught in an intense, tragic affair with an Italian bartender.</td>
+  </tr>
+  <tr>
+    <td style='padding: 8px;'>Gay Bar</td>
+    <td style='padding: 8px;'><img src='gay_bar.jpg' alt='Gay Bar Book Cover' width='50'></td>
+    <td style='padding: 8px;'>Jeremy Atherton Lin</td>
+    <td style='padding: 8px;'>A memoir and cultural history that explores the transatlantic legacy of queer nightlife, capturing the vital role these spaces played in identity and community.</td>
+  </tr>
+</table>
+</p>
+
+
+<h2> Form in Action </h2>
+
+<p>
+    <form method="get" action="#">
+    <div class="form-group">
+        <label for="first">First name:</label>
+        <input type="text" name="first" id="first" />
+    </div>
+
+    <div class="form-group">
+        <label for="last">Last name:</label>
+        <input type="text" name="last" id="last" />
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" />
+    </div>
+     Visiting From:<br>
+    <div class="form-group">
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city" />
+    </div>
+
+    <div class="form-group">
+        <label for="states">State:</label>
+        <select name="state" id="states">
+            <option value="MA">Massachusetts</option> 
+            <option value="ME">Maine</option> 
+            <option value="VT">Vermont</option> 
+            <option value="NH">New Hampshire</option> 
+            <option value="CT">Connecticut</option> 
+            <option value="RI">Rhode Island</option> 
+        </select>
+    </div>
+
+    <div class="form-group">
+    <input type="submit" value="Sign Guest Book" />
+    </div>
+</form>
+</p>
+</body>
+</html>
+
